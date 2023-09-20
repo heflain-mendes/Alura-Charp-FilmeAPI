@@ -14,5 +14,7 @@ namespace FilmesAPI.Data.DTOs
         public int Duracao { get; set; }
 
         public DateTime HoraDaConsulta {get; set;} = DateTime.Now;
+
+        public ICollection<ReadSessaoDTO>? Sessoes { get; set; }
     }
 }
